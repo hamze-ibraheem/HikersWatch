@@ -6,13 +6,92 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backgrounnight" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Hiker's Watch"
+        android:textColor="@android:color/white"
+        android:textSize="42sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:text="Latitiude: 32.4345556"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Longitude: 32.4345556"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lat" />
+
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Accuracy: 40"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/lng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lng" />
+
+    <TextView
+        android:id="@+id/alt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Altitude: 40"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/accuracy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accuracy" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Address:\n 40 street mohammad alqurtoby\n 217"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/alt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alt" />
 </androidx.constraintlayout.widget.ConstraintLayout>
